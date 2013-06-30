@@ -62,6 +62,7 @@
 
 (defroutes api-routes
   (GET "/" [] index)
+  (route/files "/")
   (GET "/rabbit" [id] (sign-in id))
   (context "/rabbit/:id" [id]
            (GET "/" [] (sign-in id))
