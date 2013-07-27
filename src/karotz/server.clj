@@ -3,7 +3,7 @@
   (:require karotz.rest)
   (:gen-class))
 
-(defn -main [& args]
+(defn -main [port]
   (do
-    (run-server karotz.rest/api {:port 8080})
+    (run-server karotz.rest/api {:port (Integer/valueOf port)})
     (println "Rabbitz server started")))
