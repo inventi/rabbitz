@@ -12,5 +12,6 @@
   :main karotz.server
   :aot [karotz.server]
   :uberjar-name "rabbitz-standalone.jar"
+  :min-lein-version "2.0.0"
   :deploy-repositories [["releases" "http://nexus.inventi.corp/content/repositories/releases/"]
                         ["snapshots" "http://nexus.inventi.corp/content/repositories/snapshots/"]])

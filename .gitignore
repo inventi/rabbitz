@@ -1,4 +1,3 @@
-resources/api.properties
 target
 .lein*
 pom.xml
