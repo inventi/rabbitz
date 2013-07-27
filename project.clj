@@ -1,6 +1,4 @@
-
-
-(defproject rabbitz "1.0.0-SNAPSHOT"
+(defproject lt.inventi/rabbitz "1.0.0"
   :description "Provides RESfull API for karotz"
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [ring "1.1.1"]
@@ -13,4 +11,7 @@
 
   :jvm-opts ["-Dfile.encoding=UTF-8" "-Dconsole.encoding=utf-8"]
   :main karotz.server
-  :aot [karotz.server])
+  :aot [karotz.server]
+
+  :deploy-repositories [["releases" "http://nexus.inventi.corp/content/repositories/releases/"]
+                        ["snapshots" "http://nexus.inventi.corp/content/repositories/snapshots/"]])
