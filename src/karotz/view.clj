@@ -9,7 +9,7 @@
       [:input {:name "id" :type "text"}]]
     [:input {:value "GO" :type "submit"}]]))
 
-(defn rabbit-actions [id]
+(defn actions [id]
   (html
    [:form {:method "get" :action (str "/rabbit/" id "/ears")}
     [:legend "Move ears"]
